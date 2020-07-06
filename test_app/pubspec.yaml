@@ -1,0 +1,37 @@
+name: test_app
+description: A simple command-line application.
+
+environment:
+  sdk: '>=2.9.0-19.0.dev <3.0.0'
+
+dependencies:
+  test_pkg:
+    path: '../test_pkg/'
+  test_pkg_unmigrated:
+    path: '../test_pkg_unmigrated/'
+
+dev_dependencies:
+  test: ^1.16.0-dev
+
+# Temporary override as the null safety enabled versions of this package is
+# not yet published to pub.dev.
+dependency_overrides:
+  test:
+    git:
+      url: https://github.com/dart-lang/test
+      ref: null_safety
+      path: pkgs/test
+  test_core:
+    git:
+      url: https://github.com/dart-lang/test
+      ref: null_safety
+      path: pkgs/test_core
+  test_api:
+    git:
+      url: https://github.com/dart-lang/test
+      ref: null_safety
+      path: pkgs/test_api
+  matcher:
+    git:
+      url: git://github.com/dart-lang/matcher.git
+      ref: null_safety

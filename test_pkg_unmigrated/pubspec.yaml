@@ -1,0 +1,5 @@
+name: test_pkg_unmigrated
+description: A library not migrated to null safety
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
