@@ -2,7 +2,7 @@ name: test_app
 description: A simple command-line application.
 
 environment:
-  sdk: '>=2.10.0-3.0.dev <3.0.0'
+  sdk: '>=2.10.0-110 <2.11.0'
 
 dependencies:
   test_pkg:
