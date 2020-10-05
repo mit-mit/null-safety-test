@@ -2,6 +2,6 @@ name: test_pkg
 description: A library migrated to null safety
 
 environment:
-  sdk: '>=2.10.0-110 <2.11.0'
+  sdk: '>=2.10.0 <2.12.0'
 
 
