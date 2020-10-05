@@ -23,3 +23,10 @@ $ dart --no-sound-null-safety --enable-experiment=non-nullable run bin/test_app_
 
 Hello: 42, 42
 ```
+
+## Running tests
+
+Run test with:
+```
+$ dart --enable-experiment=non-nullable test
+```
