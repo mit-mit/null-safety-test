@@ -8,7 +8,7 @@ package (`test_pkg`) and an unmigrated package (`test_pkg_unmigrated`).
 
 Run with:
 ```
-$ dart --enable-experiment=non-nullable run bin/test_app_unmigrated.dart
+$ dart run bin/test_app_unmigrated.dart
 
 Hello: 42, 42
 ```
