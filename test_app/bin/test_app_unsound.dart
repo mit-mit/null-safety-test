@@ -7,7 +7,7 @@ void main(List<String> arguments) {
   int i1 = pkg1.bar();
 
   // Nullable return value from unmigrated library function to non-nullable
-  // variable. *This is undound*, and would have failed if `bar2` actually
+  // variable. *This is unsound*, and would have failed if `bar2` actually
   // returned null!
   int i2 = pkg2.bar2();
 
