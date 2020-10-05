@@ -7,4 +7,8 @@ void main(List<String> arguments) {
   int i2 = pkg2.bar2();
 
   print('Hello from umigrated app: $i1, $i2');
+
+  // i1 and i2 are nullable, as this app hasn't opted in:
+  i1 = null;
+  i2 = null;
 }
