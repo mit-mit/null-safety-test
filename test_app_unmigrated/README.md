@@ -11,9 +11,7 @@ version that that doesn't have null safety.
 
 Run with:
 ```
-$ dart --enable-experiment=non-nullable run bin/test_app_unmigrated.dart
+$ dart run bin/test_app_unmigrated.dart
 
 Hello: 42, 42
 ```
-
-NOTE: 
