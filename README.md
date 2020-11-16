@@ -1,3 +1,6 @@
+[![CI status](https://github.com/mit-mit/null-safety-test/workflows/Dart/badge.svg)](https://github.com/mit-mit/null-safety-test/actions?query=workflow%3A%22Dart%22+branch%3Amaster)
+
+
 This tests basic null safety use cases:
 
 ## Sound null safety
