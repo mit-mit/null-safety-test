@@ -35,8 +35,3 @@ jobs:
           cd test_app
           dart test
           cd ..
-      - name: Run tests unmigrated app
-        run: | 
-          cd test_app_unmigrated
-          dart test
-          cd ..

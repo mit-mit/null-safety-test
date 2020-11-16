@@ -2,7 +2,7 @@ name: test_app_unmigrated
 description: A simple command-line application that has not yet migrated to null safety
 
 environment:
-  sdk: '>=2.12.0-29 <3.0.0'
+  sdk: '>=2.10.0 <3.0.0'
 
 dependencies:
   test_pkg:
