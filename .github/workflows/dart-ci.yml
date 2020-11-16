@@ -16,24 +16,27 @@ jobs:
           channel: dev
       - name: Report version
         run: dart --version
-      - name: Check migrated app 
+      - name: Check migrated app
         run: |
           cd test_app
           dart pub get
           dart analyze
           dart format --output=none --set-exit-if-changed .
           cd ..
-      - name: Check unmigrated app 
+      - name: Check unmigrated app
         run: |
           cd test_app_unmigrated
           dart pub get
           dart analyze
           dart format --output=none --set-exit-if-changed .
           cd ..
-      - name: Run tests
+      - name: Run tests migrated app
         run: | 
           cd test_app
           dart test
-          cd ../test_app_unmigrated
+          cd ..
+      - name: Run tests unmigrated app
+        run: | 
+          cd test_app_unmigrated
           dart test
           cd ..
