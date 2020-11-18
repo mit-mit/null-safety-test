@@ -33,5 +33,6 @@ jobs:
       - name: Run tests migrated app
         run: | 
           cd test_app
-          dart test
+          dart test test/test_app_test.dart
+          dart --no-sound-null-safety test test/test_app_unsound_test.dart
           cd ..
